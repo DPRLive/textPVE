@@ -1,0 +1,4 @@
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.csprojAssemblyReference.cache
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfoInputs.cache
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfo.cs
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.csproj.CoreCompileInputs.cache
