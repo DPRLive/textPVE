@@ -1,3 +1,4 @@
+// 게임 실행
 using System;
 
 namespace textPVE
