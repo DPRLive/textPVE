@@ -7,7 +7,10 @@ namespace textPVE
         static void Main(string[] args)
         {
             Process game = new Process();
-            game.process();
+            while(true)
+            {
+                game.process();
+            }
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Files\\1.unity\\textPVE\\textPVE.csproj": {}
+    "C:\\textPVE\\textPVE.csproj": {}
   },
   "projects": {
-    "D:\\Program Files\\1.unity\\textPVE\\textPVE.csproj": {
+    "C:\\textPVE\\textPVE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Files\\1.unity\\textPVE\\textPVE.csproj",
+        "projectUniqueName": "C:\\textPVE\\textPVE.csproj",
         "projectName": "textPVE",
-        "projectPath": "D:\\Program Files\\1.unity\\textPVE\\textPVE.csproj",
+        "projectPath": "C:\\textPVE\\textPVE.csproj",
         "packagesPath": "C:\\Users\\Cyber\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Files\\1.unity\\textPVE\\obj\\",
+        "outputPath": "C:\\textPVE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cyber\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

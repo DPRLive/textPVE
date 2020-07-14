@@ -2,3 +2,16 @@ D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.csprojAssemblyR
 D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfoInputs.cache
 D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfo.cs
 D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.csproj.CoreCompileInputs.cache
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.csprojAssemblyReference.cache
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfoInputs.cache
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.AssemblyInfo.cs
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.csproj.CoreCompileInputs.cache
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.exe
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.deps.json
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.runtimeconfig.json
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.runtimeconfig.dev.json
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.dll
+C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.pdb
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.dll
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.pdb
+C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.genruntimeconfig.cache

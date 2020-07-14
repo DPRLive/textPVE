@@ -12,6 +12,7 @@ namespace textPVE
         private int _hp = 0;
         private int _attack = 0;
         private CreatureType _type = CreatureType.None;
+        static int KillCount = 0;
 
         protected Creature(CreatureType type) { _type = type; }
 
@@ -20,6 +21,9 @@ namespace textPVE
 
         public int getHp() {  return _hp; }
         public int getAttack() { return _attack; }
+
+        public static void upKillCount(){ KillCount++; }
+        public static int getKillCount(){ return KillCount; }
 
         public bool isDead()
         {
