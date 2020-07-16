@@ -25,6 +25,8 @@ namespace textPVE
         public static void upKillCount(){ KillCount++; }
         public static int getKillCount(){ return KillCount; }
 
+        public virtual void getInfo() {} 
+
         public bool isDead()
         {
             if (_hp <= 0)

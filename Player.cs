@@ -26,7 +26,7 @@ namespace textPVE
         public int getMp() { return _mp; }
         public int getUseMp() { return _UseMp; }
 
-        public void getInfo() 
+        public override void getInfo() 
         {
             Console.WriteLine("*************************");
             Console.WriteLine("현재 직업: {0} ", getClassType());

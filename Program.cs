@@ -9,7 +9,10 @@ namespace textPVE
             Process game = new Process();
             while(true)
             {
-                game.process();
+                bool exit = false;
+                game.process(ref exit);
+                if(exit == true)
+                    break;
             }
         }
     }

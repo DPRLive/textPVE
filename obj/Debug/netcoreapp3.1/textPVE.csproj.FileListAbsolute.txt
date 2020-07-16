@@ -15,3 +15,12 @@ C:\textPVE\bin\Debug\netcoreapp3.1\textPVE.pdb
 C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.dll
 C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.pdb
 C:\textPVE\obj\Debug\netcoreapp3.1\textPVE.genruntimeconfig.cache
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.exe
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.deps.json
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.runtimeconfig.json
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.runtimeconfig.dev.json
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.dll
+D:\Program Files\1.unity\textPVE\bin\Debug\netcoreapp3.1\textPVE.pdb
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.dll
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.pdb
+D:\Program Files\1.unity\textPVE\obj\Debug\netcoreapp3.1\textPVE.genruntimeconfig.cache

@@ -27,7 +27,7 @@ namespace textPVE
         Random rand = new Random();
 
         public void setGameMode(ProcessMode mode) { _mode = mode; }
-        public void process()
+        public void process(ref bool exit)
         {
             switch (_mode)
             {
@@ -41,11 +41,12 @@ namespace textPVE
                     processHunt();
                     break;
                 case ProcessMode.Exit:
+                    exit = true;
                     break;
             }
         }
 
-        public void processSelect()
+        private void processSelect()
         {
             Console.WriteLine("*************************");
             Console.WriteLine("캐릭터를 선택하세요.");
@@ -69,7 +70,7 @@ namespace textPVE
             setGameMode(ProcessMode.Lobby);
         }
 
-        public void processLobby()
+        private void processLobby()
         {
             player.getInfo();
             Console.WriteLine("1. 몬스터 사냥");
@@ -83,6 +84,7 @@ namespace textPVE
             {
                 case "1":
                     setGameMode(ProcessMode.Hunt);
+                    createNewMonster();
                     processHunt();
                     break;
                 case "2":
@@ -94,10 +96,10 @@ namespace textPVE
             }
         }
 
-        public void processHunt()
+        private void processHunt()
         {
-            createNewMonster();
             player.getInfo();
+            monster.getInfo();
             Console.WriteLine("1. 기본 공격");
             Console.WriteLine("2. 스킬 사용");
             Console.WriteLine("3. 로비로 돌아가기");
@@ -118,39 +120,39 @@ namespace textPVE
             }
         }
 
-        public void processFight(AttackType aType)
+        private void processFight(AttackType aType)
         {
-            while(true)
+            if(aType == AttackType.Normal)
+                processDamage(player.getAttack(), monster.getAttack());
+            else if(aType == AttackType.Skill)
             {
-                bool dead = false;
-                if(aType == AttackType.Normal)
-                    processDamage(player.getAttack(), monster.getAttack(), ref dead);
-                else if(aType == AttackType.Skill)
-                    processDamage(player.skillShot(), monster.getAttack(), ref dead);
-                if(dead)
-                    break;
+                if(player.getMp() < player.getUseMp())
+                    Console.WriteLine("**마나 없음! 스킬 사용 불가!**");
+                else
+                    processDamage(player.skillShot(), monster.getAttack());
             }
         }
         
-        public void processDamage(int PlayerDamage, int MonsterDamage, ref bool dead)
+        private void processDamage(int PlayerDamage, int MonsterDamage)
         {
             monster.onDamage(PlayerDamage);
             if(monster.isDead())
             {
-                Console.WriteLine("몬스터를 잡았습니다!");
+                Console.WriteLine("★몬스터를 잡았습니다!★");
                 Creature.upKillCount();
-                dead = true;
+                createNewMonster();
             }
 
             player.onDamage(MonsterDamage);
             if(player.isDead())
             {
-                Console.WriteLine("사망했습니다!");
-                dead = true;
+                Console.WriteLine("@@사망했습니다!@@");
+                player.getInfo();
+                setGameMode(ProcessMode.Exit);
             }
         }
 
-        public void createNewMonster()
+        private void createNewMonster()
         {
             int mtype = rand.Next(1,4);
 
